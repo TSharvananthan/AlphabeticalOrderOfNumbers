@@ -1,0 +1,21 @@
+.settings .columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.settings .columns button {
+  padding: 10px 100px 10px 100px;
+  font-size: 24px;
+}
+
+.settings .search-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.settings .search {
+  padding: 10px 100px 10px 10px;
+  font-size: 24px;
+  width: 90%;
+}

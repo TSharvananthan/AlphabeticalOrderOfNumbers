@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Sorted </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ordered.css') }}">
+  </head>
+  <body>
+    <div class="settings">
+      <div class="columns">
+        <button type="button" name="button" onclick="changeColumnCount(1);">1 Columns</button>
+        <button type="button" name="button" onclick="changeColumnCount(2);">2 Columns</button>
+        <button type="button" name="button" onclick="changeColumnCount(3);">3 Columns</button>
+        <button type="button" name="button" onclick="changeColumnCount(4);">4 Columns</button>
+        <button type="button" name="button" onclick="changeColumnCount(5);">5 Columns</button>
+        <button type="button" name="button" onclick="changeColumnCount(6);">6 Columns</button>
+      </div>
+
+      <br /><br />
+      <div class="search-bar">
+        <input type="text" name="search-number" placeholder="Search..." class="search" id="search-id" onkeyup="search();">
+      </div>
+    </div>
+
+    <div class="list" id="list-id">
+      <ol>
+        {% for num_word in words %}
+        <li> {{ num_word }} </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/ordered.js') }}"></script>
+  </body>
+</html>
